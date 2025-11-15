@@ -1,0 +1,124 @@
+.input-section {
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 35px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: #00d4ff;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.section-header p {
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgba(0, 212, 255, 0.3);
+  border-radius: 16px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+  transition: all 0.3s ease;
+  background: rgba(15, 15, 15, 0.8);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #00d4ff;
+  background: rgba(15, 15, 15, 0.95);
+  box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.2);
+}
+
+.email-input::placeholder {
+  color: #666;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 14px;
+  border-left: 4px solid #c33;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);
+  color: #0a0a0a;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.keyboard-hint {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+kbd {
+  background: rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 12px;
+  color: #00d4ff;
+  box-shadow: 0 1px 2px rgba(0, 212, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    grid-template-columns: 1fr;
+  }
+}
